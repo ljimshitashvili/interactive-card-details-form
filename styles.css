@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(./interactive-card-details-form-main/images/bg-main-mobile.png);
+    background-size: 100% 240px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+    
+header{
+    width: 100%;
+    height: 240px;
+    position: relative;
+    max-width: 420px;
+}
+
+.back{
+    position: absolute;
+    left: 73px;
+    top: 32px;
+    width: 286px;
+    height: 157px;
+}
+
+.front{
+    position: absolute;
+    width: 286px;
+    height: 157px;
+    top: 126px;
+    left: 17px;
+}
+
+.card-logo{
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 144px;
+    left: 36px;
+}
+
+.card-number{
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 211px;
+    left: 36px;
+    width: 250px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 2.2px;
+    color: #fff;
+}
+
+.username{
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    top: 251px;
+    left: 36px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.exp-date{
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 251px;
+    left: 230px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cvv{
+    position: absolute;
+    width: 20px;
+    height: 11px;
+    top: 105px;
+    left: 302px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: 1.3px;
+    color: #FFFFFF;
+}
