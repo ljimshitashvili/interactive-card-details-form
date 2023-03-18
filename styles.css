@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
+
+
 body{
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
@@ -12,14 +14,15 @@ body{
     background-size: 100% 240px;
     background-repeat: no-repeat;
     background-position-x: center;
-
+    font-weight: 500;
 }
     
 header{
     width: 100%;
     height: 240px;
     position: relative;
-    max-width: 420px;
+    max-width: 375px;
+    margin-bottom: 91px;
 }
 
 .back{
@@ -54,7 +57,6 @@ header{
     left: 36px;
     width: 250px;
     text-align: left;
-    font-weight: 500;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 2.2px;
@@ -67,7 +69,6 @@ header{
     height: 30px;
     top: 251px;
     left: 36px;
-    font-weight: 500;
     font-size: 9px;
     line-height: 11px;
     letter-spacing: 1.28571px;
@@ -75,13 +76,12 @@ header{
     color: #FFFFFF;
 }
 
-.exp-date{
+.exp-year{
     position: absolute;
     width: 55px;
     height: 30px;
     top: 251px;
     left: 230px;
-    font-weight: 500;
     font-size: 9px;
     line-height: 11px;
     text-align: right;
@@ -90,16 +90,113 @@ header{
     color: #FFFFFF;
 }
 
-.cvv{
+
+
+.exp-month{
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 251px;
+    left: 203px;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cvc{
     position: absolute;
     width: 20px;
     height: 11px;
     top: 105px;
     left: 302px;
-    font-weight: 500;
     font-size: 9px;
     line-height: 11px;
     text-align: right;
     letter-spacing: 1.3px;
     color: #FFFFFF;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    text-transform: uppercase;
+    color: #21092F;
+    margin-bottom: 9px;
+}
+
+input{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #21092F;
+}
+
+select{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    padding: 0 16px;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 23px;
+    color: #21092F;
+}
+
+::placeholder{
+    font-size: 18px;
+    line-height: 23px;
+    color: #21092F;
+    opacity: 0.25;
+}
+
+#number,
+#name{
+    width: 327px;
+    height: 45px;
+    
+}
+
+#month, #year{
+    width: 72px;
+    height: 45px;
+}
+
+#cvc{
+    width: 164px;
+    height: 45px;
+}
+
+.flex{
+    display: flex;
+    gap: 11px;
+}
+
+button{
+    background-color: #21092F;
+    border-radius: 8px;
+    height: 53px;
+    width: 327px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.2s;
+}
+
+.float{
+    transform: translateY(60px);
+    transition: all 0.2s;
 }

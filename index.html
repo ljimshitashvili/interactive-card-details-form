@@ -15,15 +15,55 @@
         <img class="card-logo" src="./interactive-card-details-form-main/images/./card-logo.svg" alt="card logo">
         <h1 class="card-number">0000 0000 0000 0000</h1>
         <h2 class="username">name surname</h2>
-        <h3 class="exp-date">00/00</h3>
-        <h4 class="cvv">000</h4>
+        <h3 class="exp-month">00</h3>
+        <h3 class="exp-year">/ 00</h3>
+        <h4 class="cvc">000</h4>
     </header>
     <main>
-
+        <label>
+            <p>cardholder name</p>
+            <input id="name" type="text" placeholder="e.g. Jane Appleseed" required>
+        </label>
+        <label>
+            <p>card number</p>
+            <input id="number" type="number" placeholder="e.g. 1234 5678 9123 0000"  required>
+        </label>
+        <div class="flex">
+            <label>
+            <p>Exp. Date (MM/YY)</p>
+                <select id="month" type="number" placeholder="MM" >
+                    <option value="" disabled selected>M</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="year" type="age" min="2023" max="2027" placeholder="YY" required>
+                    <option value="" disabled selected>Y</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                </select>
+                </label>
+                <label>
+                    <p>cvc</p>
+                    <input id="cvc" type="number" placeholder="e.g. 123">
+                </label>
+            </div>
+            <button class="button">Confirm</button>
+        </form>
     </main>
-    <footer>
-        
-    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
