@@ -22,9 +22,6 @@ submit.addEventListener('mouseover', () => {
     if(!(!nameOfUser.value || !number.value || !number.value ==16 || !month.value || !year.value || !cvc.value || !cvc.value ==3 )){
         submit.addEventListener('click', () => {
             userName.textContent = nameOfUser.value;
-            cardNumber.textContent = number.value;
-            console.log(cardNumber.textContent);
-            copyCardNumber(number, cardNumber);
             expM.textContent = month.value.toString().padStart(2,"0");
             expY.textContent = "/ " + year.value;
             cvcCard.textContent = cvc.value;
@@ -37,13 +34,15 @@ submit.addEventListener('mouseover', () => {
         checkInput(number);    
         checkInput(month);    
         checkInput(year);    
-        checkInput(cvc);    
+        checkInput(cvc);
+
         if(number.value.length !== 16){
             number.style.border = "1px solid red";
             error.classList.remove('hidden');
         }else{
             error.classList.add('hidden');
         }
+
         if(cvc.value.length !== 3){
             cvc.style.border = "1px solid red";
             errorCvc.classList.remove('hidden');
@@ -56,19 +55,24 @@ submit.addEventListener('mouseover', () => {
 // This function checks if input is empty or not and changes color of border.
 
 function checkInput(e){
+
     if(e.value){
         e.style.border = "1px solid #DFDEE0"  
     }else{
         e.style.border = "1px solid red";
     }
+    
 }
 
+// This function adds a spaces in card number.
 
-const copyCardNumber = (x, y) => {
-    x.addEventListener("input", () => {
-        let cardValue = x.value;
-        let chunks = cardValue.match(/.{1,4}/g);
-        let joinskip = chunks.join(" ");
-        y.innerHTML = joinskip;
+function splitter(){
+    submit.addEventListener("click" , () => {
+        let cardnumbervalue = number.value;
+        let groups = cardnumbervalue.match(/.{1,4}/g);
+        let space = groups.join(" ");
+        cardNumber.innerHTML = space;
     })
 }
+
+splitter();

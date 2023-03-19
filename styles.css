@@ -221,6 +221,8 @@ button{
     flex-direction: column;
     align-items: center;
     display: none;
+    width: 100%;
+    justify-content: center;
 }
 
 .main2 h1{
@@ -240,3 +242,129 @@ button{
     margin-bottom: 48px;
 }
 
+/* desktop size */
+
+@media (min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:100vh;
+        background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+        background-size: 483px 100%;
+        background-position-x: left;
+    }
+
+    header{
+        width: 483px;
+        height: 100%;
+    }
+
+    .front{
+        left: 164px;
+        top: 187px;
+        width: 447px;
+        height: 245px;
+    }
+    
+    .back{
+        position: absolute;
+        width: 447px;
+        height: 245px;
+        top: 469px;
+        left: 258px;
+    }
+    
+    .card-logo{
+        width: 85px;
+        height: 47px;
+        top: 215px;
+        left: 196px;
+    }
+    
+    .card-number{
+        top: 326px;
+        left: 196px;
+        width: 380px;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 3.4px;
+    }
+    
+    .username{
+        width: 250px;
+        top: 387px;
+        left: 196px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+    
+    .exp-year{
+        top: 387px;
+        left: 523px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+    
+    .exp-month{
+        top: 387px;
+        left: 480px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+    
+    .cvc{
+        top: 582px;
+        left: 620px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+
+    button{
+        width: 387px;
+    }
+    
+    #number,
+    #name{
+        width: 387px;
+    }
+
+    #cvc{
+        width: 184px;
+        height: 45px;
+    }
+
+    #month, #year{
+        width: 92px;
+        height: 45px;
+    }
+
+    .main2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        height: 100%;
+    }
+    
+    .main2 h1{
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 3.42222px;
+        color: #21092F;
+        text-transform: uppercase;
+        margin: 35px 0 16px 0;
+    }
+    
+    .main2 p{
+        font-size: 18px;
+        line-height: 23px;
+        color: #8F8694;
+        margin-bottom: 48px;
+    }
+}
