@@ -119,11 +119,12 @@ header{
     color: #FFFFFF;
 }
 
-main{
+.main1{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* display: none; */
 }
 
 p{
@@ -141,6 +142,20 @@ input{
     font-size: 18px;
     line-height: 23px;
     color: #21092F;
+}
+
+.error-message,
+.error-cvc{
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF5050;
+    text-transform: none;
+    
+    margin: -10px 0 20px 0;
+}
+
+.hidden{
+    display: none;
 }
 
 select{
@@ -200,3 +215,28 @@ button{
     transform: translateY(60px);
     transition: all 0.2s;
 }
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.main2 h1{
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 3.42222px;
+    color: #21092F;
+    text-transform: uppercase;
+    margin: 35px 0 16px 0;
+}
+
+.main2 p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #8F8694;
+    margin-bottom: 48px;
+}
+

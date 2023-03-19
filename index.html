@@ -19,7 +19,7 @@
         <h3 class="exp-year">/ 00</h3>
         <h4 class="cvc">000</h4>
     </header>
-    <main>
+    <div class="main1">
         <label>
             <p>cardholder name</p>
             <input id="name" type="text" placeholder="e.g. Jane Appleseed" required>
@@ -27,11 +27,12 @@
         <label>
             <p>card number</p>
             <input id="number" type="number" placeholder="e.g. 1234 5678 9123 0000"  required>
+            <p class="error-message hidden">Must include 16 digits!</p>
         </label>
         <div class="flex">
             <label>
             <p>Exp. Date (MM/YY)</p>
-                <select id="month" type="number" placeholder="MM" >
+                <select id="month" type="number" placeholder="MM" required>
                     <option value="" disabled selected>M</option>
                     <option value="1">01</option>
                     <option value="2">02</option>
@@ -58,12 +59,19 @@
                 </label>
                 <label>
                     <p>cvc</p>
-                    <input id="cvc" type="number" placeholder="e.g. 123">
+                    <input id="cvc" type="number" placeholder="e.g. 123" required>
+                    <p class="error-cvc hidden">Must include 3 digits!</p>
                 </label>
             </div>
             <button class="button">Confirm</button>
         </form>
-    </main>
+    </div>
+    <div class="main2">
+        <img src="./interactive-card-details-form-main/images/icon-complete.svg" alt="complete icon">
+        <h1>thank you!</h1>
+        <p>We’ve added your card details</p>
+        <button class="button">Continue</button>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
